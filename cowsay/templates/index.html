@@ -1,0 +1,14 @@
+<h3>Cowsay CowSWayyy!</h3>
+
+<form action="/" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>
+<a href='/history'>
+    <button>10 Most Recent</button>
+</a>
+
+<pre> {{ cowsay_text }} </pre>
+
+ 
